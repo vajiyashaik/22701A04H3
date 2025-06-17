@@ -20,10 +20,11 @@ public class ReverseStack{
     public static void pushBottom(Stack<Integer>stack,int val){
         if(stack.isEmpty()){
             stack.push(val);
+            return;
 
         }
         int ele=stack.pop();
-        pushBottom(stack,ele);
+        pushBottom(stack,val);
         stack.push(ele);
         
     }
